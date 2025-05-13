@@ -215,7 +215,7 @@ def main():
                 obstacles.append(SmallCactus(SMALL_CACTUS))
             elif obstacle_choice == 1:
                 obstacles.append(LargeCactus(LARGE_CACTUS))
-            elif obstacle_choice == 2:
+            else:
                 obstacles.append(Bird(BIRD))
 
         for obstacle in obstacles:
