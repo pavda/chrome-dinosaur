@@ -210,11 +210,12 @@ def main():
         player.update(userInput)
 
         if len(obstacles) == 0:
-            if random.randint(0, 2) == 0:
+            obstacle_choice = random.randint(0, 2)
+            if obstacle_choice == 0:
                 obstacles.append(SmallCactus(SMALL_CACTUS))
-            elif random.randint(0, 2) == 1:
+            elif obstacle_choice == 1:
                 obstacles.append(LargeCactus(LARGE_CACTUS))
-            elif random.randint(0, 2) == 2:
+            elif obstacle_choice == 2:
                 obstacles.append(Bird(BIRD))
 
         for obstacle in obstacles:
